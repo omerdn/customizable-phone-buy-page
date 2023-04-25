@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#content {
+    width: 70%;
+    margin: auto auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header */
+#header {
+    padding: 10px;
+    margin: 0px;
+    background-color: rgb(24, 24, 24);
+}
+
+ul {
+    list-style-type: none;
+    margin: auto auto;
+    padding: 0;
+    overflow: hidden;
+    width: 70%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(204, 204, 204);
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.1s;
+}
+
+li a:hover:not(.active) {
+    color: rgb(255, 255, 255);
+}
+
+.active {
+    color: rgb(255, 255, 255);
+}
+
+/* Phone type, color and storage choosing */
+
+.buttonBox {
+    background: #ffffff;
+    padding: 10px 30px 10px 30px;
+    border-radius: 15px;
+    border: 1px solid rgb(218, 218, 218);
+    cursor: pointer;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 300px;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border 0.2s;
+    margin-bottom: 10px;
+}
+
+.checked {
+    border: 1px solid #1792da;
+}
+
+#black {
+    cursor: pointer;
+    background: black;
+    border-radius: 1000px;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+}
+
+#blue {
+    cursor: pointer;
+    background: rgb(0, 204, 255);
+    border-radius: 1000px;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    color: rgb(0, 204, 255);
+}
+
+#red {
+    cursor: pointer;
+    background: rgb(230, 16, 16);
+    border-radius: 1000px;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    color: rgb(230, 16, 16);
+}
+
+#yellow {
+    cursor: pointer;
+    background: rgb(230, 226, 16);
+    border-radius: 1000px;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    color: rgb(230, 226, 16);
+}
+
+#green {
+    cursor: pointer;
+    background: rgb(95, 230, 16);
+    border-radius: 1000px;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+    color: rgb(95, 230, 16);
+}
+
+#colorborder {
+    background: white;
+    padding: 2px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 1000px;
+    margin: 5px;
+}
+
+#colorborder_checked {
+    border: 1px solid #1792da;
+}
+
+.details {
+    color: rgb(139, 139, 139);
+    font-size: 12px;
+    text-align: right;
+}
+
+.minidetails {
+    font-size: 13px; font-weight:lighter; margin-top: 5px;
+}
+
+.chargerbox {
+    display:block;
+    width: auto;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.floater_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#category {
+    font-weight: bold;
+    position: relative;
+    left: 20px;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+/* footer */
+
+#footer {
+    display: block;
+    position: fixed;
+    background: white;
+    border-top: 1px solid rgb(218, 218, 218);
+    width: 100%;
+    padding: 15px 90px 15px 60px;
+    bottom: -300px;
+    transition: bottom 0.5s;
+}
+
+#fullprice_show {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.button_unusable {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
